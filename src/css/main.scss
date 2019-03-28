@@ -73,7 +73,7 @@
     font-weight: 200;
   }
 
-  h3 {
+  h2 {
     font-size: 16px;
     line-height: 18px;
     font-family: "Guardian Headline Full";
@@ -117,24 +117,6 @@
   }
 }
 
-h2 {
-  font-family: "Guardian Headline Full";
-  padding: 0 10px;
-  max-width: 600px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-top: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-
-  @include mq($from: desktop) {
-    margin-left: 9.375rem;
-  }
-
-  @include mq($from: wide) {
-    margin-left: 14.375rem;
-  }
-}
-
 p {
   padding: 0 10px;
   max-width: 600px;
@@ -148,16 +130,11 @@ p {
   }
 
   &:first-of-type:first-letter {
-    font-size: 112px;
+    font-size: 90px;
     font-weight: 200;
-    font-family: "Guardian Titlepiece";
+    font-family: "Guardian Headline Full";
     line-height: 80px;
     margin-right: -8px;
-    float: left;
-    line-height: 80px;
-    margin-right: 5px;
-    margin-top: 6px;
-    float: left;
   }
 
   a {
@@ -263,7 +240,7 @@ p {
 
 @mixin position {
   width: 96%;
-  margin-left: 1.2%;
+  margin-left: 2%;
 }
 
 .ds-web-headline {
