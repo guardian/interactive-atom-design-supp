@@ -173,6 +173,42 @@ p {
   }
 }
 
+blockquote {
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  font-size: 26px;
+  line-height: 32px;
+  padding-left: 6px;
+  padding-top: 6px;
+  max-width: 300px;
+
+  @include mq($from: desktop) {
+    margin-left: 115px;
+  }
+
+  @include mq($from: wide) {
+    margin-left: 200px;
+  }
+
+  p {
+    margin-left: 0 !important;
+    font-weight: 200;
+    font-family: "Guardian Headline Full";
+
+    &:first-of-type:first-letter {
+      font-size: inherit;
+      font-weight: 200;
+      font-family: "Guardian Headline Full";
+      line-height: inherit;
+      margin-right: 0 !important;
+      float: left;
+      margin-right: 0 !important;
+      margin-top: 0;
+      float: none;
+    }
+  }
+}
+
 .ds-header {
   display: flex;
   flex-direction: column;
