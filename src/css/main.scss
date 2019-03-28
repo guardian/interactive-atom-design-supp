@@ -263,7 +263,7 @@ p {
 
 @mixin position {
   width: 96%;
-  margin-left: 1.02%;
+  margin-left: 1.2%;
 }
 
 .ds-web-headline {
@@ -655,12 +655,6 @@ p {
     svg {
       width: 100%;
       height: auto;
-
-      use {
-        @include mq($from: desktop) {
-          fill: white;
-        }
-      }
     }
   }
 }
