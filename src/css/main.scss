@@ -130,11 +130,16 @@ p {
   }
 
   &:first-of-type:first-letter {
-    font-size: 90px;
+    font-size: 112px;
     font-weight: 200;
-    font-family: "Guardian Headline Full";
+    font-family: "Guardian Titlepiece";
     line-height: 80px;
     margin-right: -8px;
+    float: left;
+    line-height: 80px;
+    margin-right: 5px;
+    margin-top: 6px;
+    float: left;
   }
 
   a {
@@ -146,6 +151,34 @@ p {
       border-bottom: none;
       text-decoration: none;
       background-color: #eacca0;
+    }
+  }
+}
+
+blockquote {
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  font-size: 22px;
+  line-height: 24px;
+  padding-left: 6px;
+  padding-top: 6px;
+  max-width: 300px;
+
+  @include mq($from: desktop) {
+    margin-left: 200px;
+  }
+
+  p {
+    &:first-of-type:first-letter {
+      font-size: inherit;
+      font-weight: 200;
+      font-family: "Guardian Headline Full";
+      line-height: inherit;
+      margin-right: 0;
+      float: left;
+      margin-right: 0;
+      margin-top: 0;
+      float: none;
     }
   }
 }
