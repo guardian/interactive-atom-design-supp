@@ -335,7 +335,7 @@ blockquote {
     max-width: 500px;
 
     @include mq($from: desktop) {
-      top: 23vh;
+      top: 60vh;
       bottom: auto;
       left: 254px;
       max-width: 900px;
