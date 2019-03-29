@@ -264,7 +264,7 @@ blockquote {
     }
 
     @include mq($from: desktop) {
-      left: 30vw;
+      left: 26vw;
       top: 2vh;
       height: 230px;
       width: 230px;
@@ -589,6 +589,8 @@ blockquote {
 
   img {
     height: auto;
+    object-fit: cover;
+
     @include mq($from: desktop) {
       width: 79.2%;
     }
