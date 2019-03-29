@@ -125,6 +125,7 @@ h2 {
   margin-bottom: 50px;
   border-top: 1px solid #ececec;
   border-left: 1px solid #ececec;
+  line-height: 26px;
 
   @include mq($from: desktop) {
     margin-left: 9.375rem;
@@ -273,25 +274,24 @@ p {
   font-weight: 200;
   position: absolute;
   bottom: 20px;
-  width: 56%;
-  margin-left: 36%;
+  width: 90%;
+  margin-left: 10px;
   z-index: 1;
+  padding: 0 10;
 
   @include mq($from: desktop) {
-    top: 64vh;
     width: 290px;
-    margin-left: 28vw;
+    margin-left: 9.375rem;
     font-size: 21px;
     line-height: 24px;
-    bottom: auto;
+    bottom: 3vw;
   }
 
   @include mq($from:wide) {
     font-size: 21px;
     line-height: 24px;
-    margin-left: 410px;
+    margin-left: 14.375rem;
     width: 294px;
-    top: 74vh;
   }
 
   svg.page-turn {
@@ -320,19 +320,19 @@ p {
     @include position;
     height: auto;
     position: absolute;
-    bottom: 110px;
+    bottom: 56px;
     z-index: 1;
     max-width: 500px;
 
     @include mq($from: desktop) {
       top: 23vh;
       bottom: auto;
-      left: 254px;
+      left: 12.4vw;
       max-width: 900px;
     }
 
     @include mq($from: wide) {
-      left: 235px;
+      left: 9.4vw;
     }
 
     &.mobile {
@@ -528,6 +528,8 @@ p {
 
   img {
     height: auto;
+    object-fit: cover;
+    
     @include mq($from: desktop) {
       width: 79.2%;
     }
