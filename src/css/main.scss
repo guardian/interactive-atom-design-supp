@@ -181,6 +181,22 @@ blockquote {
   padding-left: 6px;
   padding-top: 6px;
   max-width: 300px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  &:before {
+    background-size: 100%;
+    height: 25px;
+    width: 31px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-right: 5px;
+    float: left;
+    content: '';
+    display: block;
+    background-image: url('https://uploads.guim.co.uk/2019/03/29/quote_mark.png') !important;
+    background-repeat: no-repeat;
+  }
 
   @include mq($from: desktop) {
     margin-left: 115px;
@@ -308,24 +324,30 @@ blockquote {
   font-family: "Guardian Headline Full";
   font-weight: 200;
   position: absolute;
-  bottom: 20px;
-  width: 56%;
-  margin-left: 36%;
+  bottom: -40px;
+  width: 90%;
+  margin-left: 10px;
   z-index: 1;
+
+  .bold {
+    font-weight: 700;
+    display: block;
+  }
 
   @include mq($from: desktop) {
     top: 64vh;
     width: 290px;
-    margin-left: 28vw;
+    margin-left: 9.375rem;
     font-size: 21px;
     line-height: 24px;
     bottom: auto;
+    padding: 0 10px;
   }
 
   @include mq($from:wide) {
     font-size: 21px;
     line-height: 24px;
-    margin-left: 410px;
+    margin-left: 14.375rem;
     width: 294px;
     top: 74vh;
   }
@@ -349,7 +371,7 @@ blockquote {
   }
 
   @include mq($from: wide) {
-    width: 109%;
+    width: 100%;
   }
 
   svg:not(.page-turn) {
@@ -359,16 +381,19 @@ blockquote {
     bottom: 110px;
     z-index: 1;
     max-width: 500px;
+    margin-left: 10px;
 
     @include mq($from: desktop) {
-      top: 23vh;
+      top: 24vh;
       bottom: auto;
-      left: 254px;
+      left: 0;
       max-width: 900px;
+      width: 88%;
+      margin-left: 11.02%;
     }
 
     @include mq($from: wide) {
-      left: 235px;
+      left: 0;
     }
 
     &.mobile {
@@ -390,7 +415,7 @@ blockquote {
 }
 
 .ds-header-left {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
 
   @include mq($from: desktop) {
