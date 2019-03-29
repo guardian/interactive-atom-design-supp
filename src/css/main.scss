@@ -219,6 +219,7 @@ blockquote {
 
     @include mq($from: tablet) {
       display: none;
+      transform: rotate(-200deg) translateX(-66px) translateY(-123px);
     }
 
     @include mq($from: desktop) {
