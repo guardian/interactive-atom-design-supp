@@ -73,7 +73,7 @@
     font-weight: 200;
   }
 
-  h2 {
+  h3 {
     font-size: 16px;
     line-height: 18px;
     font-family: "Guardian Headline Full";
@@ -311,6 +311,7 @@ blockquote {
 
   .raf, .simons, .life, .after, .calvin, .klein{
     display: block;
+    text-transform: uppercase;
   }
 
   .raf {
@@ -494,7 +495,7 @@ blockquote {
   padding-left: 82px;
   margin-top: 90px;
   padding-right: 30px;
-  width: 289px;
+  width: 40vw;
   transition: opacity 0.75s ease-in-out;
 
   &.mouseover {
@@ -503,13 +504,21 @@ blockquote {
   }
 
   h3 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 120px;
+
+    span {
+      display: block;
+      font-family: "Guardian Headline Full";
+      font-weight: 700;
+    }
   }
 
   ul {
     list-style: none;
     margin-left: 0;
+    margin-bottom: 80px;
 
     a {
       color: inherit;
@@ -518,16 +527,15 @@ blockquote {
       &:hover {
         border-bottom: none;
         text-decoration: none;
-        background-color: #eacca0;
       }
     }
 
     li {
       font-family: "Guardian Headline Full";
-      font-size: 16px;
-      line-height: 18px;
+      font-size: 20px;
+      line-height: 24px;
       border-top: 1px solid #121212;
-      margin-bottom: 12px;
+      margin-bottom: 24px;
       margin-left: 0;
       padding-left: 0;
 
@@ -581,7 +589,9 @@ blockquote {
 
   &.mouseover {
     @include mq($from: desktop) {
-      width: 400px;
+      width: 50vw;
+      overflow: auto;
+      overflow-x: hidden;
     }
   }
 
