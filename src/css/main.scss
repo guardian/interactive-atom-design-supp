@@ -456,7 +456,7 @@ blockquote {
   padding-left: 82px;
   margin-top: 90px;
   padding-right: 30px;
-  width: 289px;
+  width: 40vw;
   transition: opacity 0.75s ease-in-out;
 
   &.mouseover {
@@ -465,13 +465,21 @@ blockquote {
   }
 
   h3 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 120px;
+
+    span {
+      display: block;
+      font-family: "Guardian Headline Full";
+      font-weight: 700;
+    }
   }
 
   ul {
     list-style: none;
     margin-left: 0;
+    margin-bottom: 80px;
 
     a {
       color: inherit;
@@ -480,16 +488,15 @@ blockquote {
       &:hover {
         border-bottom: none;
         text-decoration: none;
-        background-color: #eacca0;
       }
     }
 
     li {
       font-family: "Guardian Headline Full";
-      font-size: 16px;
-      line-height: 18px;
+      font-size: 20px;
+      line-height: 24px;
       border-top: 1px solid #121212;
-      margin-bottom: 12px;
+      margin-bottom: 24px;
       margin-left: 0;
       padding-left: 0;
 
@@ -543,7 +550,9 @@ blockquote {
 
   &.mouseover {
     @include mq($from: desktop) {
-      width: 400px;
+      width: 50vw;
+      overflow: auto;
+      overflow-x: hidden;
     }
   }
 
@@ -725,5 +734,45 @@ blockquote {
         }
       }
     }
+  }
+}
+
+.ds-meta-dateline {
+  .content__dateline {
+    min-height: 1rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-top: none;
+    border-left: 1px solid #ececec;
+  }
+}
+
+.ds-meta {
+  margin-bottom: 24px;
+}
+
+.ds-meta-byline {
+  p {
+    font-family: "Guardian Headline Full";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    border-left: 1px solid #ececec;
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  p:first-of-type:first-letter {
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+      margin-right: 0;
+      line-height: 0;
+      margin-right: 0;
+      margin-top: 0;
+      float: none;
   }
 }
