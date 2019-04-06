@@ -476,7 +476,7 @@ p {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 30;
+  z-index: 10;
   transition: width 0.5s ease-in-out;
   cursor: pointer;
   overflow: hidden;
@@ -485,6 +485,7 @@ p {
     height: 100vh;
     width: 60px;
     top: 0;
+    z-index: 30;
   }
 
   &.mouseover {
