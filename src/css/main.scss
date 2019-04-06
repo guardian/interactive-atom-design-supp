@@ -642,6 +642,8 @@ blockquote {
 
   img {
     height: auto;
+    object-fit: cover;
+    
     @include mq($from: desktop) {
       width: 79.2%;
     }
