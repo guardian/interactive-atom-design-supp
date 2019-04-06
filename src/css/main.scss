@@ -394,6 +394,8 @@ blockquote {
 
     @include mq($from: wide) {
       left: 0;
+      width: 90%;
+      margin-left: 9.02%;
     }
 
     &.mobile {
@@ -467,7 +469,7 @@ blockquote {
   h3 {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 120px;
+    padding-top: 30px;
 
     span {
       display: block;
@@ -525,7 +527,7 @@ blockquote {
     width: auto;
 
     @include mq($from: desktop) {
-      height: 80px;
+      height: 53px;
     }
   }
 }
@@ -546,6 +548,7 @@ blockquote {
     height: 100vh;
     width: 60px;
     top: 0;
+    z-index: 30;
   }
 
   &.mouseover {
