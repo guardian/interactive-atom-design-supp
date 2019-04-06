@@ -239,6 +239,10 @@ blockquote {
       display: block;
     }
 
+    @include mq($from: wide) {
+      left: 32vw;
+    }
+
   }
 
   .ds-shape-2 {
@@ -506,7 +510,7 @@ blockquote {
   h3 {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 120px;
+    padding-top: 30px;
 
     span {
       display: block;
@@ -564,7 +568,7 @@ blockquote {
     width: auto;
 
     @include mq($from: desktop) {
-      height: 80px;
+      height: 53px;
     }
   }
 }
@@ -576,7 +580,7 @@ blockquote {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 30;
   transition: width 0.5s ease-in-out;
   cursor: pointer;
   overflow: hidden;
