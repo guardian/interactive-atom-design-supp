@@ -28,7 +28,7 @@ function insertLinks(footer){
   var childNode = document.querySelector('.footer__primary');
   var ankle = document.createElement('div');
   ankle.classList.add('ds-ankle');
-  ankle.innerHTML = '<div class="ds-ankle-inner"><div class="ds-onward-three"><a href="https://gu.com/p/b2xg5"></a><img src="https://media.guim.co.uk/c1095ef515d8e8c4324ecd8cbeaa517ac832e558/0_187_5604_3362/1000.jpg"><h1>The upside down: Lowline subterranean park in Manhattan</h1><h3>In two years’ time, the Lower East Side will be home to the world’s first underground ‘green’ space – the Lowline</h3></div></div>'
+  ankle.innerHTML = '<div class="ds-ankle-inner"><div class="ds-onward-two"><a href="https://gu.com/p/b54nc"></a><img src="https://media.guim.co.uk/7c0e2c0cc0998d940b9d5be60f951e998ec71ce2/0_285_5473_3284/1000.jpg"><h1>Madelon Vriesendorp: Such stuff as dreams are made on</h1><h3>For years, she was one of the unsung heroines of architecture but the eclectic artist is now receiving the recognition and plaudits that have long been her due</h3></div><div class="ds-onward-three"><a href="https://gu.com/p/b2xg5"></a><img src="https://media.guim.co.uk/c1095ef515d8e8c4324ecd8cbeaa517ac832e558/0_187_5604_3362/1000.jpg"><h1>The upside down: Lowline subterranean park in Manhattan</h1><h3>In two years’ time, the Lower East Side will be home to the world’s first underground ‘green’ space – the Lowline</h3></div></div>'
   footer.insertBefore(ankle, childNode);
 }
 
