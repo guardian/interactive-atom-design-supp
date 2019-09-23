@@ -297,7 +297,7 @@ blockquote {
   @include mq($from: desktop) {
     left: 180px;
     font-size: 68px;
-    line-height: 68px;
+    line-height: 60px;
     top: 140px;
   }
 
@@ -313,11 +313,11 @@ blockquote {
     left: 168px;
   }
 
-  .raf, .simons, .life, .after, .calvin, .klein{
+  .circle, .raf, .simons, .life, .after, .calvin, .klein{
     display: block;
     text-transform: uppercase;
   }
-
+/*
   .raf {
     color: #f1aea9;
     transform: rotate(8deg);
@@ -332,14 +332,16 @@ blockquote {
     transform: rotate(-4deg);
     margin-top: -8px;
   }
+  */
   .life {
     color: #676d89;
-    transform: rotate(5deg);
 
     @include mq($from: desktop) {
       margin-left: 80px;
+      font-size: 200px;
     }
   }
+  /*
   .after {
     color: #7d91a4;
     transform: rotate(-5deg);
@@ -366,6 +368,7 @@ blockquote {
       margin-top: -15px;
     }
   }
+  */
 }
 
 .ds-web-headline {
