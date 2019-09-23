@@ -290,9 +290,6 @@ blockquote {
   font-family: "Guardian Titlepiece";
   position: absolute;
   top: 80px;
-  left: 10px;
-  font-size: 34px;
-  line-height: 34px;
 
   @include mq($from: desktop) {
     left: 180px;
@@ -313,57 +310,42 @@ blockquote {
     left: 168px;
   }
 
-  .raf, .simons, .life, .after, .calvin, .klein{
+  .es, .devlin, .subhead{
     display: block;
     text-transform: uppercase;
   }
 
-  .raf {
-    color: #f1aea9;
-    transform: rotate(8deg);
+  .es, .devlin {
+    color: #000000;
+    font-size: 80px;
+    line-height: 64px;
+    margin-left: 1vw;
 
     @include mq($from: desktop) {
-      margin-left: 60px;
-      margin-bottom: -15px;
+      font-size: 100px;
+      line-height: 80px;
+    }
+    @include mq($from: leftCol) {
+      font-size: 120px;
+      line-height: 92px;
     }
   }
-  .simons {
-    color: #feaf62;
-    transform: rotate(-4deg);
-    margin-top: -8px;
-  }
-  .life {
-    color: #676d89;
-    transform: rotate(5deg);
 
-    @include mq($from: desktop) {
-      margin-left: 80px;
+  .devlin {
+      padding-bottom: 10px,;
     }
-  }
-  .after {
-    color: #7d91a4;
-    transform: rotate(-5deg);
 
-    @include mq($from: desktop) {
-      margin-top: -10px;
-    }
-  }
-  .calvin {
-    color: #e8ddd0;
-    transform: rotate(6deg);
-    margin-top: 4px;
-
-    @include mq($from: desktop) {
-      margin-left: 80px;
-    }
-  }
-  .klein {
+  .subhead {
     color: #c2d5dd;
-    transform: rotate(-4deg);
-    margin-top: -4px;
+    margin-left: 146px;
+    width: 60%;
+    font-size: 34px;
+    line-height: 30px;
 
     @include mq($from: desktop) {
-      margin-top: -15px;
+      font-size: 34px;
+      line-height: 34px;
+      margin-left: 8vw;
     }
   }
 }
@@ -384,9 +366,9 @@ blockquote {
   }
 
   @include mq($from: desktop) {
-    top: 64vh;
+    top: 80vh;
     width: 290px;
-    margin-left: 25vw;
+    margin-left: 18vw;
     font-size: 21px;
     line-height: 24px;
     bottom: auto;
@@ -546,7 +528,7 @@ blockquote {
       .kicker {
         font-weight: 900;
         margin-right: 6px;
-        color: #a1845c;
+        color: #121212;
       }
     }
   }
@@ -575,7 +557,7 @@ blockquote {
 
 .ds-navigation {
   position: fixed;
-  background-color: #FBF6EF;
+  background-color: #D9EEF1;
   height: 60px;
   width: 100%;
   left: 0;
