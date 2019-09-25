@@ -328,13 +328,13 @@ blockquote {
   left: 10px;
 
   @include mq($from: tablet) {
-    font-size: 70px;
-    line-height: 56px;
+    font-size: 50px;
+    line-height: 44px;
   }
 
   @include mq($from: desktop) {
     font-size: 64px;
-    line-height: 52px;
+    line-height: 60px;
     left: 70px;
     bottom: 20px;
   }
@@ -342,10 +342,9 @@ blockquote {
   @include mq($from: desktop) {
     font-size: 64px;
     line-height: 52px;
-    left: 70px;
+    left: 78px;
     bottom: 30px;
   }
-
 
 }
 
@@ -368,17 +367,18 @@ blockquote {
   }
 
   @include mq($from: tablet) {
-    width: 52%;
+    width: 40%;
+    top: 72px;
   }
 
   @include mq($from: desktop) {
-    top: 80px;
     width: 50%;
     margin-left: 70px;
     font-size: 21px;
     line-height: 24px;
     bottom: auto;
     padding: 0 10px;
+    top:90px;
   }
 
   @include mq($from:wide) {
@@ -541,7 +541,7 @@ blockquote {
       .kicker {
         font-weight: 900;
         margin-right: 6px;
-        color: #a1845c;
+        color: #333333;
       }
     }
   }
@@ -570,7 +570,7 @@ blockquote {
 
 .ds-navigation {
   position: fixed;
-  background-color: #FBF6EF;
+  background-color: #D9EEF1;
   height: 60px;
   width: 100%;
   left: 0;
