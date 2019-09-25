@@ -328,12 +328,12 @@ blockquote {
   .es, .devlin {
     color: #000000;
     font-size: 80px;
-    line-height: 64px;
+    line-height: 66px;
     margin-left: 1vw;
 
     @include mq($from: tablet) {
       font-size: 140px;
-      line-height: 110px;
+      line-height: 120px;
     }
 
     @include mq($from: desktop) {
@@ -342,7 +342,7 @@ blockquote {
     }
     @include mq($from: leftCol) {
       font-size: 120px;
-      line-height: 92px;
+      line-height: 100px;
     }
   }
 
