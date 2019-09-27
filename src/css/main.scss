@@ -390,6 +390,8 @@ blockquote {
   */
 }
 
+
+
 .ds-web-headline {
   font-size: 16px;
   line-height: 20px;
@@ -507,6 +509,28 @@ blockquote {
       }
     }
   }
+}
+
+
+/* this is where the "circle of life" HED svg css is set */
+.ds-headline-svg  svg:not(.page-turn) {
+  width: 80%;
+  top: 100px;
+  left: 20px;
+
+  @include mq($from: tablet) {
+    width: 50%;
+    top: 60px;
+    left: 40px;
+  }
+
+  @include mq($from: desktop) {
+    width: 90%;
+    top: 80px;
+    left: 120px;
+    transform: rotate(-2deg);
+  }
+
 }
 
 .ds-header-left {
