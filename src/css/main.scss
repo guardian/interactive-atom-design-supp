@@ -302,6 +302,8 @@ blockquote {
     top: 80px;
   }
 
+
+
 /*
   mobilemedium is 375px
   mobilelandscape is 480px
@@ -320,6 +322,7 @@ blockquote {
     left: 64px;
   }
 
+/* This is the old headline
   .es, .devlin, .subhead{
     display: block;
     text-transform: uppercase;
@@ -380,6 +383,7 @@ blockquote {
 
   }
 }
+*/
 
 .ds-web-headline {
   font-size: 16px;
@@ -426,6 +430,7 @@ blockquote {
   height: 50vh;
   position: relative;
 
+
   @include mq($from: desktop) {
     height: 100vh;
   }
@@ -441,6 +446,7 @@ blockquote {
     bottom: 110px;
     z-index: 1;
     max-width: 500px;
+
 
     @include mq($from: desktop) {
       top: 60vh;
@@ -470,6 +476,7 @@ blockquote {
     }
   }
 }
+
 
 .ds-header-left {
   height: 60vh;
