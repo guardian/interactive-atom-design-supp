@@ -40,6 +40,7 @@
     margin-left: 14.375rem;
   }
 
+
   .ds-onward-one, .ds-onward-two, .ds-onward-three {
     flex-basis: 33%;
     padding-top: 6px;
@@ -302,6 +303,10 @@ blockquote {
     top: 80px;
   }
 
+  @include mq($from: wide) {
+    left: 64px;
+  }
+}
 
 
 /*
@@ -313,14 +318,10 @@ blockquote {
   leftcol is 1140px
   wide is 1300px
 */
-  @include mq($from: desktop) {
-    left: 68px;
-  }
 
 
-  @include mq($from: wide) {
-    left: 64px;
-  }
+
+
 
 /* This is the old headline
   .es, .devlin, .subhead{
@@ -385,54 +386,24 @@ blockquote {
 }
 */
 
-.ds-web-headline {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Guardian Headline Full";
-  font-weight: 200;
-  position: absolute;
-  bottom: -52px;
-  width: 52%;
-  margin-left: 146px;
-  z-index: 1;
-
-  .bold {
-    font-weight: 700;
-  }
-
-  @include mq($from: desktop) {
-    top: 80vh;
-    width: 290px;
-    margin-left: 160px;
-    font-size: 21px;
-    line-height: 24px;
-    bottom: auto;
-  }
-
-  @include mq($from:wide) {
-    font-size: 21px;
-    line-height: 24px;
-    width: 294px;
-    margin-left: 242px;
-  }
-
-  svg.page-turn {
-    display: inline-block;
-    width: 9px;
-    height: 15px;
-    position: relative;
-    bottom: auto;
-  }
-}
 
 .ds-headline-svg {
   width: 100%;
-  height: 50vh;
-  position: relative;
+  top: 10px;
+  position: absolute;
 
+  /*
+    mobilemedium is 375px
+    mobilelandscape is 480px
+    phablet is 740px
+    tablet is 740px
+    desktop is 980px
+    leftcol is 1140px
+    wide is 1300px
+  */
 
   @include mq($from: desktop) {
-    height: 100vh;
+    width: 80%;
   }
 
   @include mq($from: wide) {
@@ -476,6 +447,66 @@ blockquote {
     }
   }
 }
+
+.ds-headline-svg svg:not(.page-turn) {
+  width: 90%;
+  top: 70px;
+  position: absolute;
+
+  @include mq($from: desktop) {
+    width: 45%;
+    left: 65px;
+    top: 270px;
+  }
+  @include mq($from: wide) {
+    width: 35%;
+  }
+
+
+
+}
+
+.ds-web-headline {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Guardian Headline Full";
+  font-weight: 200;
+  position: absolute;
+  bottom: -400px;
+  width: 52%;
+  margin-left: 146px;
+  z-index: 1;
+  color: #121212;
+
+  .bold {
+    font-weight: 700;
+  }
+
+  @include mq($from: desktop) {
+    top: 80vh;
+    width: 290px;
+    margin-left: 160px;
+    font-size: 21px;
+    line-height: 24px;
+    bottom: auto;
+  }
+
+  @include mq($from:wide) {
+    font-size: 21px;
+    line-height: 24px;
+    width: 294px;
+    margin-left: 242px;
+  }
+
+  svg.page-turn {
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    position: relative;
+    bottom: auto;
+  }
+}
+
 
 
 .ds-header-left {
