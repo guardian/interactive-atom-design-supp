@@ -353,10 +353,10 @@ blockquote {
   font-family: "Guardian Headline Full";
   font-weight: 200;
   position: absolute;
-  bottom:-60px;
-  width: 60%;
-  margin-left: 90px;
   z-index: 1;
+  bottom: -47px;
+  width: 80%;
+  margin-left: 16px;
 
 
   .bold {
@@ -367,6 +367,9 @@ blockquote {
     width: 30%;
     left: 185px;
     padding-top: 10px;
+    bottom:-60px;
+    width: 60%;
+    margin-left: 90px;
   }
 
   @include mq($from: desktop) {
