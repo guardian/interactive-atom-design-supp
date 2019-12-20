@@ -323,6 +323,49 @@ blockquote {
 
 }
 
+.ds-web-headline {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Guardian Headline Full";
+  font-weight: 200;
+  position: absolute;
+  bottom: 20px;
+  width: 65%;
+  margin-left: 126px;
+  z-index: 1;
+
+  .bold {
+    font-weight: 700;
+  }
+
+  @include mq($from:tablet) {
+    font-size: 21px;
+    line-height: 24px;
+    width: 30%;
+    margin-left: 240px;
+  }
+
+  @include mq($from: desktop) {
+    //margin-left: 25vw;
+    //font-size: 21px;
+    line-height: 24px;
+    // bottom: -80px;
+  }
+
+  @include mq($from:wide) {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  svg.page-turn {
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    position: relative;
+    bottom: auto;
+  }
+}
+
 .ds-headline-svg {
   // width: 50%;
   height: 50vh;
@@ -358,58 +401,6 @@ mobileMedium
     margin-left: -170px;
     bottom: 340px;
   }
-
-.ds-web-headline {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Guardian Headline Full";
-  font-weight: 200;
-  position: absolute;
-  bottom: -32px;
-  width: 65%;
-  margin-left: 126px;
-  z-index: 1;
-
-  .bold {
-    font-weight: 700;
-  }
-
-  @include mq($from:tablet) {
-    font-size: 21px;
-    line-height: 24px;
-    width: 294px;
-    margin-left: 400px;
-    bottom: -80px;
-  }
-
-  @include mq($from: desktop) {
-    top: 124vh;
-    width: 270px;
-    //margin-left: 25vw;
-    //font-size: 21px;
-    line-height: 24px;
-    // bottom: -80px;
-  }
-
-  @include mq($from:wide) {
-    top: 110vh;
-    font-size: 21px;
-    line-height: 24px;
-    width: 294px;
-  }
-
-
-
-  svg.page-turn {
-    display: inline-block;
-    width: 9px;
-    height: 15px;
-    position: relative;
-    bottom: auto;
-  }
-}
-
-
 
   svg:not(.page-turn) {
     @include position;
