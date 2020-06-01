@@ -320,19 +320,21 @@ p {
     @include position;
     height: auto;
     position: absolute;
-    bottom: 56px;
+    top: 120px;
     z-index: 1;
     max-width: 500px;
 
     @include mq($from: desktop) {
       top: 23vh;
+      width: 80%;
       bottom: auto;
-      left: 12.4vw;
+      left: 7.5vw;
       max-width: 900px;
     }
 
     @include mq($from: wide) {
-      left: 9.4vw;
+      left: 7.4vw;
+      width: 70%;
     }
 
     &.mobile {
@@ -385,6 +387,8 @@ p {
     animation-iteration-count: 1;
     animation-delay: 1s;
   }
+
+
 }
 
 .ds-navigation-display {
