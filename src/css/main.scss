@@ -367,15 +367,15 @@ p {
 .ds-header-right {
   width: 100%;
   height: 50vh;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 
   @include mq($from: desktop) {
     height: 100vh;
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 25%;
+    height: 25%;
     object-fit: cover;
     position: relative;
     opacity: 0;
@@ -388,7 +388,51 @@ p {
     animation-delay: 1s;
   }
 
+  // .thumb-one {
+  //   opacity: 0;
+  //
+  //   @include mq($from: desktop) {
+  //     height: 25%;
+  //     position: absolute;
+  //     max-width: 420px;
+  //     left: 650px;
+  //     top: 500px;
+  //     z-index: 1;
+  //   }
+  //   @include mp($from: leftCol) {
+  //     left: 800px;
+  //   }
+  // }
 
+  .thumb-two {
+    @include mq($from: desktop) {
+      height: 55%;
+      position: absolute;
+      max-width: 420px;
+      right: 200px;
+      top: 200px;
+    }
+  }
+
+  // .thumb-three {
+  //   opacity: 0;
+  //
+  //   @include mq($from: desktop) {
+  //     height: 20%;
+  //     position: absolute;
+  //     left: 500px;
+  //     top: 110px;
+  //     z-index: 1;
+  //     }
+  //
+  //   @include mp($from: leftCol) {
+  //     left: 700px;
+  //     }
+  //
+  //   @include mp($from: wide) {
+  //     left: 850px;
+  //     }
+  // }
 }
 
 .ds-navigation-display {
