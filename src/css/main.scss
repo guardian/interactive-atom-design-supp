@@ -185,81 +185,6 @@ p {
     flex-direction: row;
     height: 100vh;
   }
-
-  .ds-shape-1, .ds-shape-2, .ds-shape-3 {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    z-index: 2;
-    opacity: 0;
-  }
-
-  .ds-shape-1 {
-    left: -5vw;
-    top: 41vh;
-    height: 100px;
-    width: 100px;
-    transform: rotate(17deg);
-    background-color: #FC9837;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-delay: 1.75s;
-
-    @include mq($from: tablet) {
-      display: none;
-    }
-
-    @include mq($from: desktop) {
-      left: 30vw;
-      top: 2vh;
-      height: 230px;
-      width: 230px;
-      display: none;
-    }
-
-    @include mq($from:leftCol) {
-      display: block;
-    }
-
-  }
-
-  .ds-shape-2 {
-    top: 68vh;
-    left: 10vw;
-    width: 150px;
-    height: 150px;
-    transform: rotate(-27deg);
-    background-color: #F0EAD1;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
-    display: none;
-
-    @include mq($from: desktop) {
-      display: block;
-    }
-  }
-
-  .ds-shape-3 {
-    transform: rotate(-117deg);
-    width: 270px;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-delay: 2.5s;
-    background-color: #545F8A;
-
-    @include mq($until:desktop) {
-      top: -110px;
-      left: 28px;
-    }
-  }
 }
 
 @mixin position {
@@ -308,6 +233,7 @@ p {
   height: 50vh;
   position: relative;
 
+
   @include mq($from: desktop) {
     height: 100vh;
   }
@@ -324,8 +250,13 @@ p {
     z-index: 1;
     max-width: 500px;
 
+    @include mq($from: tablet) {
+      top: 30%;
+      left: 15%;
+    }
+
     @include mq($from: desktop) {
-      top: 23vh;
+      top: 30vh;
       width: 80%;
       bottom: auto;
       left: 7.5vw;
@@ -367,15 +298,15 @@ p {
 .ds-header-right {
   width: 100%;
   height: 50vh;
-  background-color: #ffffff;
+  background-color: #CEB24C;
 
   @include mq($from: desktop) {
     height: 100vh;
   }
 
   img {
-    width: 25%;
-    height: 25%;
+    // width: 25%;
+    // height: 25%;
     object-fit: cover;
     position: relative;
     opacity: 0;
@@ -388,51 +319,22 @@ p {
     animation-delay: 1s;
   }
 
-  // .thumb-one {
-  //   opacity: 0;
-  //
-  //   @include mq($from: desktop) {
-  //     height: 25%;
-  //     position: absolute;
-  //     max-width: 420px;
-  //     left: 650px;
-  //     top: 500px;
-  //     z-index: 1;
-  //   }
-  //   @include mp($from: leftCol) {
-  //     left: 800px;
-  //   }
-  // }
+  img .thumb-one {
+    opacity: 0;
 
-  .thumb-two {
-    @include mq($from: desktop) {
-      height: 55%;
-      position: absolute;
-      max-width: 420px;
-      right: 200px;
-      top: 200px;
-    }
+
   }
 
-  // .thumb-three {
-  //   opacity: 0;
-  //
-  //   @include mq($from: desktop) {
-  //     height: 20%;
-  //     position: absolute;
-  //     left: 500px;
-  //     top: 110px;
-  //     z-index: 1;
-  //     }
-  //
-  //   @include mp($from: leftCol) {
-  //     left: 700px;
-  //     }
-  //
-  //   @include mp($from: wide) {
-  //     left: 850px;
-  //     }
-  // }
+  .thumb-two {
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+  .thumb-three {
+    opacity: 0;
+  }
 }
 
 .ds-navigation-display {
