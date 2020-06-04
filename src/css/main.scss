@@ -248,8 +248,8 @@ p {
     position: absolute;
     top: 80px;
     z-index: 1;
-    max-width: 260px;
-    left: 10%;
+    max-width: 200px;
+    left: 12%;
 
     @include mq($from: tablet) {
       max-width: 80%;
