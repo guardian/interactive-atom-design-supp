@@ -252,8 +252,8 @@ p {
     left: 12%;
 
     @include mq($from: tablet) {
-      max-width: 80%;
-      top: 15%;
+      max-width: 75%;
+      top: 12%;
       left: 10%;
     }
 
