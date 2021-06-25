@@ -16,69 +16,13 @@
   }
 }
 
+// This hides the ad at the top of the interactive
+#dfp-ad--top-above-nav {
+  display: none;
+}
+
 .is-immersive-interactive .l-footer {
   display: block !important;
-}
-
-.ds-ankle {
-  width: 100%;
-  background: white;
-}
-
-.ds-ankle-inner {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid #ececec;
-  padding-right: 20px;
-
-  @include mq($from:desktop) {
-    flex-direction: row;
-    margin-left: 9.375rem;
-  }
-
-  @include mq($from: wide) {
-    margin-left: 14.375rem;
-  }
-
-  .ds-onward-one, .ds-onward-two, .ds-onward-three {
-    flex-basis: 33%;
-    padding-top: 6px;
-    border-left: 1px solid #ececec;
-    padding-left: 6px;
-    padding-right: 20px;
-    min-height: 400px;
-    position: relative;
-
-    a{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: 10;
-    }
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  h1 {
-    font-size: 26px;
-    line-height: 26px;
-    margin-bottom: 12px;
-    font-family: "Guardian Headline Full";
-    font-weight: 200;
-  }
-
-  h3 {
-    font-size: 16px;
-    line-height: 18px;
-    font-family: "Guardian Headline Full";
-    font-weight: 600;
-  }
 }
 
 .element-atom,
@@ -174,7 +118,35 @@ p {
   }
 }
 
-.ds-header {
+
+.insert {
+  &__content {
+    width: 100%;
+  }
+  &__headline {
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    top: 40vh;
+
+    h1 {
+      margin: 0 auto;
+      width: 75%;
+      font-family: "Guardian Headline Full";
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 115%;
+      padding: 4px;
+      margin-bottom: 8px;
+      background-color: white;
+      
+    }
+  }
+}
+
+
+
+.insert_blocks {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -185,81 +157,6 @@ p {
     flex-direction: row;
     height: 100vh;
   }
-
-  .ds-shape-1, .ds-shape-2, .ds-shape-3 {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    z-index: 2;
-    opacity: 0;
-  }
-
-  .ds-shape-1 {
-    left: -5vw;
-    top: 41vh;
-    height: 100px;
-    width: 100px;
-    transform: rotate(17deg);
-    background-color: #FC9837;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-delay: 1.75s;
-
-    @include mq($from: tablet) {
-      display: none;
-    }
-
-    @include mq($from: desktop) {
-      left: 30vw;
-      top: 2vh;
-      height: 230px;
-      width: 230px;
-      display: none;
-    }
-
-    @include mq($from:leftCol) {
-      display: block;
-    }
-
-  }
-
-  .ds-shape-2 {
-    top: 68vh;
-    left: 10vw;
-    width: 150px;
-    height: 150px;
-    transform: rotate(-27deg);
-    background-color: #F0EAD1;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
-    display: none;
-
-    @include mq($from: desktop) {
-      display: block;
-    }
-  }
-
-  .ds-shape-3 {
-    transform: rotate(-117deg);
-    width: 270px;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-delay: 2.5s;
-    background-color: #545F8A;
-
-    @include mq($until:desktop) {
-      top: -110px;
-      left: 28px;
-    }
-  }
 }
 
 @mixin position {
@@ -267,7 +164,7 @@ p {
   margin-left: 1.2%;
 }
 
-.ds-web-headline {
+.ds-web-headline, .insert__standfirst {
   font-size: 16px;
   line-height: 20px;
   font-family: "Guardian Headline Full";
@@ -353,19 +250,20 @@ p {
   }
 }
 
-.ds-header-left {
+.ds-header-left, .insert__left {
   height: 50vh;
   width: 100%;
+  background-color: $neutral-93;
 
   @include mq($from: desktop) {
     height: 100vh;
   }
 }
 
-.ds-header-right {
+.ds-header-right, .insert__right {
   width: 100%;
   height: 50vh;
-  background-color: #f6f6f6;
+  background-color: $opinion-400;
 
   @include mq($from: desktop) {
     height: 100vh;
@@ -387,67 +285,7 @@ p {
   }
 }
 
-.ds-navigation-display {
-  visibility: none;
-  opacity: 0;
-  transition: opacity 0.75s ease-in-out;
-  transition-delay: 4s;
-  padding-left: 82px;
-  margin-top: 90px;
-  padding-right: 30px;
-  width: 40vw;
-  transition: opacity 0.75s ease-in-out;
 
-  &.mouseover {
-    visibility: block;
-    opacity: 1;
-  }
-
-  h3 {
-    font-size: 20px;
-    line-height: 24px;
-    padding-top: 0px;
-
-    span {
-      display: block;
-      font-family: "Guardian Headline Full";
-      font-weight: 700;
-    }
-  }
-
-  ul {
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 80px;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      cursor: pointer;
-
-      &:hover {
-        border-bottom: none;
-        text-decoration: none;
-      }
-    }
-
-    li {
-      font-family: "Guardian Headline Full";
-      font-size: 20px;
-      line-height: 24px;
-      border-top: 1px solid #121212;
-      margin-bottom: 24px;
-      margin-left: 0;
-      padding-left: 0;
-
-      .kicker {
-        font-weight: 900;
-        margin-right: 6px;
-        color: #a1845c;
-      }
-    }
-  }
-}
 
 .ds-logo {
   position: fixed;
@@ -466,48 +304,6 @@ p {
 
     @include mq($from: desktop) {
       height: 53px;
-    }
-  }
-}
-
-.ds-navigation {
-  position: fixed;
-  background-color: #FBF6EF;
-  height: 60px;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  transition: width 0.5s ease-in-out;
-  cursor: pointer;
-  overflow: hidden;
-
-  @include mq($from: desktop) {
-    height: 100vh;
-    width: 60px;
-    top: 0;
-    z-index: 30;
-  }
-
-  &.mouseover {
-    @include mq($from: desktop) {
-      width: 50vw;
-      overflow: auto;
-      overflow-x: hidden;
-    }
-  }
-
-  .ds-article-label {
-    display: none;
-
-    @include mq($from: desktop) {
-      transform: rotate(-90deg) translateX(-190px) translateY(-118px);
-      width: 297px;
-      font-family: $f-sans-serif-text;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      display: block;
     }
   }
 }
@@ -647,7 +443,7 @@ p {
   }
 }
 
-.ds-header-header {
+.ds-header-header, .insert__wrapper {
   height: 70px;
   padding-top: 10px;
   width: 100%;
