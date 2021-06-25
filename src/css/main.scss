@@ -138,6 +138,9 @@ p {
     @include mq($from:tablet) {
       width: 54%;
     }
+    @include mq($from:desktop) {
+      width: 45%;
+    }
 
     h1 {
       font-family: "Guardian Headline Full";
@@ -160,20 +163,13 @@ p {
       @include mq($from:tablet) {
         font-size: 34px;
       }
+      @include mq($from:leftCol) {
+        font-size: 42px;
+      }
     }
   }
   &__blocks {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    border-bottom: 1px solid #ececec;
-
-    @include mq($from:desktop) {
-      flex-direction: row;
-      height: 100vh;
-      width: 100%;
-    }
+    // This should be the same as ds-header but when I replace it, I break it
   }
 }
 
@@ -183,7 +179,7 @@ p {
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid #ececec;
-  
+
   @include mq($from:desktop) {
     flex-direction: row;
     height: 100vh;
